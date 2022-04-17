@@ -1,0 +1,6 @@
+pandas
+azure-storage-blob
+hvac
+dask
+prefect[viz]
+snowflake-connector-python
