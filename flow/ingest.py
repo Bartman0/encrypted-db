@@ -12,7 +12,7 @@ class CSV:
         self._filename = filename
         self._dataframe = None
         self._encrypt_cols = encrypt_cols
-        self._hvac_client = hvac.Client(url='https://localhost:8200',
+        self._hvac_client = hvac.Client(url='http://localhost:8200',
                                         token=os.environ['VAULT_TOKEN'],
                                         verify=False)
         self._mount_point = os.environ['VAULT_TRANSIT_MOUNT_POINT']
